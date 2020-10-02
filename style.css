@@ -4,25 +4,50 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(to right, #516395, #614385);
   overflow: hidden;
 }
 
 article {
-  height: 40rem;
-  width: 30rem;
+  height: 100vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "Sansita Swashed", cursive;
-  background: #ecf0f1;
-  border-radius: 30px;
-  box-shadow: 30px;
-  box-shadow: 11px 11px 18px 1px rgba(0, 0, 0, 0.651);
-  
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  background: linear-gradient(to top, #516395, #614385);
+  color: #ecf0f1;
+}
+
+article .location {
+  display: flex;
+  align-items: center;
+}
+
+article .location .text{
+  display: flex;
+  margin-right: 10rem;
+}
+
+article .location .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article .location .text p.location-city,
+article .location .text p.location-country,
+article .location .text p.divider {
+  font-size: 2rem;
+}
+
+article .location .icon img.icon-status{
+  height: 10rem;
+}
+
+article .temp{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 25px;
 }
